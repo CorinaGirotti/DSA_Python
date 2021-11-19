@@ -1,0 +1,36 @@
+# Calculadora em Python
+
+#Mostrar na tela a apresentação inical do programa
+print('******Calculadora em Python******\n')
+
+#Mostrar as opções de operações para o usuário
+print('Opções de operações disponiveis:\n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão \n')
+
+#escolha do usuário
+oper = int(input('Selecione a operação desejada (1/2/3/4): '))
+
+#Solicitação de dois números para a operação
+x = int(input('Informe o primeiro número: '))
+y = int(input('Informe o segundo número: '))
+
+print('\n')
+
+#Clausulas if para execução do codigo
+if(oper ==  1):
+    add = x + y
+    print('%s + %r = %d \n' %(x,y,add))
+
+elif(oper == 2):
+    sub = x - y
+    print('%s - %r = %d \n' %(x,y,sub))
+
+elif(oper == 3):
+    multp = x * y
+    print('%s * %r = %d \n' %(x,y,multp))
+
+elif(oper == 4):
+    divs = x / y
+    print('%s / %r = %d \n' %(x,y,divs))
+
+else:
+    print('Operação selecionada é invalida')
